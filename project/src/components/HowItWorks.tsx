@@ -1,6 +1,6 @@
 import React from 'react';
 import { Upload, Search, Music, ArrowRight } from 'lucide-react';
-
+import WaitinglistWidget from './WaitlistWidget';
 const HowItWorks: React.FC = () => {
   return (
     <section id="how-it-works" className="py-20 relative overflow-hidden">
@@ -9,7 +9,7 @@ const HowItWorks: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            How <span className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">MusicMatch</span> Works
+            How <span className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">Audiory</span> Works
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Our simple three-step process helps you find the perfect soundtrack for your Instagram content in seconds.
@@ -51,11 +51,10 @@ const HowItWorks: React.FC = () => {
             </div>
             <div className="flex-1">
               <h3 className="text-xl font-semibold text-white mb-2">Want to see it in action?</h3>
-              <p className="text-gray-300 mb-4">Try our demo and see how quickly you can find the perfect music for your Instagram content.</p>
-              <button className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity inline-flex items-center">
-                Try Demo
-                <ArrowRight className="ml-2" size={16} />
-              </button>
+              <p className="text-gray-300 mb-4">Join our Waitlist and get early access as soon as it launch to find the perfect music for your Instagram content.</p>
+             
+                <WaitinglistWidget />
+              
             </div>
           </div>
         </div>

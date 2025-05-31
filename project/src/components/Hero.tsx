@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
                 onClick={() => setShowUploader(true)}
                 className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-3 rounded-full hover:opacity-90 transition-all duration-300 flex items-center justify-center group"
               >
-                Try Now
+                Try a demo
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
               <WaitlistWidget />
