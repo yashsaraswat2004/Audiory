@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Upload, Music } from 'lucide-react';
 import StoryUploader from './StoryUploader';
-
+import WaitlistWidget from './WaitlistWidget';
 const Hero: React.FC = () => {
   const [showUploader, setShowUploader] = useState(false);
 
@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
               Find the <span className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">Perfect Music</span> for Your Instagram Stories
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              Upload your story, tell us the vibe, and we'll match you with the ideal soundtrack that elevates your content.
+              Are you someone who struggles to find the right music for your Instagram stories?
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
@@ -31,9 +31,7 @@ const Hero: React.FC = () => {
                 Try Now
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-8 py-3 rounded-full hover:bg-white/20 transition-all duration-300">
-                Learn More
-              </button>
+              <WaitlistWidget />
             </div>
           </div>
           

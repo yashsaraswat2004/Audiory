@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Music, Search, User } from 'lucide-react';
-
+import WaitingListWidget from './WaitlistWidget';
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,9 +34,7 @@ const Header: React.FC = () => {
             <a href="#" className="text-white hover:text-pink-400 transition-colors">Home</a>
             <a href="#how-it-works" className="text-white hover:text-pink-400 transition-colors">How It Works</a>
             <a href="#features" className="text-white hover:text-pink-400 transition-colors">Features</a>
-            <button className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity">
-              Login
-            </button>
+            <WaitingListWidget/>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -75,9 +73,10 @@ const Header: React.FC = () => {
               >
                 Features
               </a>
-              <button className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity self-start">
+              {/* <button className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity self-start">
                 Login
-              </button>
+              </button> */}
+              <WaitingListWidget />
             </nav>
           </div>
         </div>

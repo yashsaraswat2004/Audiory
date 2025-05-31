@@ -1,6 +1,6 @@
 import React from 'react';
 import { Music, Instagram, Twitter, Facebook } from 'lucide-react';
-
+import WaitinglistWidget from './WaitlistWidget';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-black relative overflow-hidden">
@@ -54,14 +54,7 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-semibold mb-4">Subscribe</h4>
             <p className="text-gray-400 mb-4">Stay updated with our latest features and releases.</p>
             <div className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email" 
-                className="bg-white/5 border border-white/10 rounded-l-lg px-4 py-2 text-white w-full focus:outline-none focus:border-pink-500"
-              />
-              <button className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-2 rounded-r-lg hover:opacity-90 transition-opacity">
-                Join
-              </button>
+             <WaitinglistWidget/>
             </div>
           </div>
         </div>
